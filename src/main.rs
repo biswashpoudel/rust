@@ -1,15 +1,28 @@
-//understanding tuple in rust
+// writing the tuple syntax in rust 
 
-fn main(){
-    let tup:(i32, u32, f64) = (-32, 32, 32.0);
+//entry point of the rust function 
 
-    let first_value: i32 = tup.0; 
+//tuple lets us to store a group of different numeric data types together inside 
+//small brackets 
+fn main(){ 
+//declaring a tuple variable with three different data types
 
-    let second_value: u32 = tup.1; 
+let tup: (i32, u32, f64) = (-27, 27, 27.27); 
 
-    let third_value: f64 = tup.2; 
+//accessing the tuple elements like accessing the js arrays elements
 
-    println!("{}", first_value); 
-    println!("{}", second_value); 
-    println!("{}", third_value); 
+let first_value: i32 = tup.0;
+
+let second_value: u32 = tup.1; 
+
+let third_value: f64 = tup.2; 
+
+//printing the values into the command line
+
+println!("{}", first_value); //should print the negative 27
+
+println!("{}", second_value); //ashould return the positive 27
+
+println!("{}", third_value); //should return the floating value 27.27
+
 }
